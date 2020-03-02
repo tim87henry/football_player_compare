@@ -18,7 +18,7 @@ class PlayerStats:
             page_content=BeautifulSoup(page_data.data,"html.parser")
             
             # Extract the required info from the page contents
-            dobmatch=re.search(r"(\s)*Date of birth\n(.*)((\d{1,2}) ([A-Za-z]{3,10}) (\d{4}))(.*)Place of birth",page_content.text)
+            dobmatch=re.search(r"(\s)*Date of birth\n(.*)(( \d{1,2}) ([A-Za-z]{3,10}) (\d{4}))(.*)Place of birth",page_content.text)
             self.dob=dobmatch.group(3)
             pobmatch=re.search(r"(\s)*Place of birth\n(.*)Height",page_content.text)
             self.pob=pobmatch.group(2)
