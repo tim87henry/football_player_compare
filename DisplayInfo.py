@@ -5,13 +5,16 @@ class DisplayInfo:
         a single player
     '''
     def singlePlayer(self,PlayerStats):
-        print("\n"+PlayerStats.player+" information\n")
-        print("Date of Birth : "+str(PlayerStats.dob))
-        print("Place of Birth : "+str(PlayerStats.pob))
-        print("Position : "+str(PlayerStats.pos))
-        print("Total Matches played : "+str(PlayerStats.matches))
-        print("Total Goals scored : "+str(PlayerStats.goals))
-        print("\n\n")
+        print("\n")
+        print("%25s %30s"%("Name : ",PlayerStats.player))
+        print("%25s %30s"%("Date of Birth : ",PlayerStats.dob))
+        print("%25s %30s"%("Place of Birth : ",PlayerStats.pob))
+        print("%25s %30s"%("Position : ",PlayerStats.pos))
+        print("%25s %30s"%("Total Matches played : ",PlayerStats.matches))
+        print("%25s %30s"%("Total Goals scored : ",PlayerStats.goals))
+        print("\n")
+        print("\n")
+
     
     ''' twoPlayer proc is used to display information about
         the two given players
